@@ -6,7 +6,7 @@
 <title>重山のページ</title>
 </head>
 <body>
-  <div id="doc" class="markdown-body container-fluid"><h1 id="jintori">JINTORI</h1><h2 id="tip1"><img src="https://i.imgur.com/WU0EJ2b.png" alt=""></h2><h3 id="プラットフォーム">プラットフォーム</h3><ul>
+  <div id="doc" class="markdown-body container-fluid"><h1 id="jintori">JINTORI</h1><h2 id="tip1"><img src="https://i.imgur.com/sPUys2T.png" alt=""></h2><h3 id="プラットフォーム">プラットフォーム</h3><ul>
 <li>Windows専用</li>
 </ul><h3 id="開発環境">開発環境</h3><ul>
 <li>Unity</li>
@@ -20,12 +20,12 @@
 <li>ターン制で自分のターンに行える行動は駒を動かすことのみ</li>
 <li>駒を動かしマスを囲むと囲んだ範囲を自身の陣地にすることができる</li>
 <li>最終的に相手よりもマスの数の多いほうが勝利</li>
-</ul><h2 id="アピールポイント">アピールポイント</h2><h2 id="tip8"><img src="https://i.imgur.com/wOyLX1v.png" alt=""></h2><p>上図のような盤面の1マス1マスを配列で管理しています。<br>
+</ul><h2 id="アピールポイント">アピールポイント</h2><h2 id="tip8"><img src="https://i.imgur.com/1S4w2aK.png" alt=""></h2><p>上図のような盤面の1マス1マスを配列で管理しています。<br>
 今は赤い駒のターンとなっており、赤い駒の周り緑色のマスが動ける範囲になっています。<br>
 配列で自身の駒の位置を取得し、そこからx軸、y軸の±1の範囲を検索し周りのマスの状態を取得します。<br>
 そして、自身のマスまた、敵のマスになっていないかを判断し何にも属していないマスに移動できるようにしています。<br>
 ルールの1つに「敵のマスが続いている場合またいで移動することはできない」としました。<br>
 どういうことかというと、</p><h2 id="tip9"><img src="https://i.imgur.com/SAQAi7q.png" alt=""></h2><p>上図のような場合には斜めに青色のマスが連続しているので、そのマスをまたいで赤色の枠で囲まれたマスに移動することはできません。<br>
 つまり、自身の駒の位置を表す配列から、x軸±1に相手のマス かつy軸±1に相手のマスがあった場合は自身の駒の配列にそのx軸y軸と同じ値を足した配列の位置には移動できないというように設計しました。</p></div>
-  </body>
+</body>
 </html>
